@@ -66,8 +66,8 @@ height: 8px;
 background: transparent;
 }
 ::-webkit-scrollbar-thumb{
-  background: #bbb;
-  border-radius: 5px;
+  background: #eede4f;
+  border-radius: 0px;
 }
 
 i{
