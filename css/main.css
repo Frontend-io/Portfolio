@@ -360,6 +360,7 @@ footer .page-progress{
     }
     footer .resume{
         width: 100%;
+        box-sizing: border-box;
         padding: 15px;
         text-align: center;
         margin-right: 0px !important
