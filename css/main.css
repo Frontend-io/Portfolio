@@ -364,3 +364,10 @@ footer .page-progress{
         margin-right: 0px !important
     }
 }
+
+@media(max-width: 500px){
+    main ._section .tools li{
+        width: 100%;
+        padding: 20px 
+    }
+}
