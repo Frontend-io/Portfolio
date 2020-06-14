@@ -1,0 +1,348 @@
+body{
+    padding: 0px;
+    max-width: 2000px;
+    margin: 0px auto
+}
+h1,
+h2,
+h3,
+h4{
+    color: #29264c;
+}
+header{
+    position: fixed;
+    padding: 30px 20px 20px 25px;
+}
+header nav ul{
+    box-sizing: border-box;
+    padding: 20px 20px 20px 0px !important;
+
+}
+header nav ul a{
+    color: #eede4f;
+    font-size: 16px;
+    margin: 0px 10px 0px 0px ;
+}
+header nav ul a:hover{
+    color: #fff
+}
+/* .container{
+    maxwidth: 80%;
+    margin: 0px auto;
+    border: 1px solid red
+} */
+.landing{
+    width: 100%; 
+    background: linear-gradient(to right, rgb(41, 38, 76), rgba(0, 0, 0, .5)),url("../img/jefferson.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+    box-sizing: border-box;
+    padding-top: 120px;
+}
+.landing > div {
+    padding: 20px;
+}
+.landing .summary h2 {
+    color: #fff;
+    line-height: 1.2;
+    font-size: 100px;
+    padding-bottom: 8px;
+}
+.landing .summary p{
+    font-size: 16px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+.landing .landing-extra{
+    background: #eede4f;
+    padding: 20px;
+    margin-top: 50px;
+}
+.landing .landing-extra li{
+    color: #29264c;
+    font-size: 14px;
+    margin: 0px 30px 0px 20px !important;
+    position: relative
+}
+.landing .landing-extra li:before{
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: #29264c;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px
+}
+/* MAIN CONTENT */
+main .intro{
+    padding: 50px 0px 150px 0px ;
+    text-align: center;
+    background: #fff;
+    position: relative;
+}
+main .intro .title{
+    position: relative;
+    font-size: 40px;
+}
+main .intro .title:before{
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: #29264c;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30%;
+}
+main .intro .title:after{
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: #f0db1c;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30%;
+}
+main .intro .title .title-halve{
+    color: #f0db1c;
+}
+main .intro p{
+    font-size: 18px;
+    max-width: 800px;
+    margin: 40px auto 0px auto;
+    font-weight: 600
+}
+/* SECTIONS */
+main ._section{
+    max-height: 400px; 
+    padding: 30px 30px 0px 30px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 150px;
+}
+main ._section.design{
+    background: #eede4f;
+}
+main ._section .section-curve{
+    position: relative;
+    top: -100px;
+    font-size: 60px;
+}
+/* design */
+main ._section p.title{
+    position: relative;
+    top: -90px;
+    font-size: 20px;
+    color: #4b4868;
+    line-height: 1.5
+}
+/* dev */
+main ._section.dev{
+    max-height: fit-content;
+    margin-bottom: 50px;
+}
+main ._section.dev .tools {
+    padding: 0px
+}
+main ._section .tools li{
+    width: fit-content;
+    position: relative;
+    top: -50px;
+    margin: 10px 10px 20px 0px !important;
+    display: flex;
+    box-shadow: -5px 5px 30px rgba(0, 0, 0, .03);
+    align-items: center;
+    padding: 5px 20px;
+    background: #fff;
+    border-radius: 3px;
+}
+main ._section .tools li img{
+    height: 30px;
+    width: 30px;
+}
+main ._section .tools li h4{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #4b4868
+}
+/* WORK */
+main .intro.work{
+    background: linear-gradient(to right, rgb(41, 38, 76, 1), rgba(0, 0, 0, .5)),url("../img/jefferson.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+main .intro.work .title{
+    font-size: 80px;
+}
+main .intro.work  .des{
+    margin-top: 0px;
+}
+main .intro.work .title:before{
+    left: 20%;
+    background: #fff
+}
+main .intro.work .title:after{
+    right: 20%;
+}
+main .intro.work .projects{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+main .intro.work .projects a{
+    margin: 10px;
+}
+main .intro.work .projects .project{
+    background: #fff;
+    width: 300px;
+    flex-wrap: wrap;
+    border-top: .5px solid #ddd;
+    border-right: .5px solid #ddd;
+    transition: .3s;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 5px rgba(0, 0, 0, .08)
+}
+main .intro.work .projects .project:hover{
+    border-color: #eede4f;
+    transition: .3s;
+}
+main .intro.work .projects .project img{
+    height: 180px;
+    margin-top: -1px;
+    min-width: 100%;
+    background: #f0db1c !important;
+    object-fit: cover
+}
+main .intro.work .projects .project .project-desc{
+    padding: 10px 20px;
+    margin-top: 0px;
+    clip-path: polygon(0 100%, 200% 100% , 0% 0vh, -1000% 0vh);
+    background: white;
+    position: relative;
+    top: -30px;
+    height: 20px
+}
+main .intro.work .projects .project  h3{
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+/* FOOTER */
+footer{
+    position: fixed;
+    width: 100%;
+    background: white;
+    bottom: 0px;
+    left: 0px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px -15px 30px rgba(0, 0, 0, .03);
+}
+footer .links{
+    display: flex;
+    align-items: center
+}
+footer a {
+    color: rgb(228, 152, 10);
+    margin-right: 20px;
+}
+footer .resume{
+    background: #29264c;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: #eede4f;
+    margin-right: 23px !important;
+    transition: .3s;
+}
+footer .resume:hover{
+    transform: scale(1.2);
+    margin-right: 15px;
+}
+footer .page-progress{
+    height: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #eede4f;
+}
+
+/* responsiveness */
+@media(max-width: 768px){
+    header{
+        position: absolute;
+        padding-top: 0px;
+    }
+    .landing .summary h2 {
+        font-size: 40px;
+    }
+    /* MAIN */
+    main .intro .title{
+        font-size: 30px;
+    }
+    main .intro  p{
+        font-size: 16px;
+        padding: 0px 10px;
+    }
+    main .intro .title:before{
+        left: 5%;
+    }
+    main .intro .title:after{
+        right: 5%;
+    }
+    /* SECTIONS */
+    main ._section .section-curve{
+        position: relative;
+        top: -80px;
+        font-size: 40px;
+    }
+    main ._section{
+        max-height: fit-content
+    }
+    /* work */
+    main .intro.work .title{
+        font-size: 40px;
+    }
+    main .intro.work .projects {
+        justify-content: stretch;
+        padding: 10px;
+    }
+    main .intro.work .projects a  {
+        width: 100% !important
+    }
+    main .intro.work .projects .project {
+        width: 100% !important
+    }
+
+    /* FOOTER */
+    footer{
+        padding: 10px;
+        font-size: 14px;
+        flex-wrap: wrap ;
+    }
+
+    footer .links{
+        flex-direction: column;
+    }
+    footer .links a{
+        margin: 0px 10px;
+    }
+    footer .links h2{
+        align-self: stretch;
+        padding-left: 20px;
+        text-align: center
+    }
+    footer .resume{
+        width: 100%;
+        padding: 15px;
+        text-align: center
+    }
+}
