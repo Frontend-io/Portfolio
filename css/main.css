@@ -343,6 +343,7 @@ footer .page-progress{
 
     footer .links{
         width: 100%;
+        box-sizing: border-box;
         flex-direction: column;
         margin-top: 0px !important
     }
